@@ -1,0 +1,2159 @@
+/* ===== FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;900&display=swap');
+
+:root {
+  --lightgreen: #3DDABE;
+  --darkgreen: #2A796B;
+  --lightgray: #F0F0F0;
+  --gray1: #333333;
+  --gray2: #213C37;
+  --gray3: #828282;
+  --gray4: #BDBDBD;
+  --gray5: #E0E0E0;
+  --gray6: #F2F2F2;;
+  --white: #FFF;
+  --graybg: #E5E5E5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  display: block;
+}
+
+a:hover:not(.services-btn) {
+  transform: scale(1.1);
+  box-shadow: 0px 20px 50px -15px rgba(29, 117, 101, 0.6);
+}
+
+a:active:not(.services-btn) {
+  transform: translateY(10px);
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 20px 50px -15px rgba(29, 117, 101, 0.3);
+}
+
+button:active {
+  transform: translateY(10px);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  width: 100vw;
+  overflow-X: hidden;
+}
+
+/* ===== FIRST PAGE STYLES ===== */
+/* #region */
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+header .container {
+  position: absolute;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background:url('../Images/First Page/Background2.png') no-repeat, url('../Images/First Page/GreenBG.png') no-repeat;
+  background-position: 80% 100%, 113% 0;
+  background-size: 30% 86%, 50% 105%;
+
+  background-color: var(--white);
+}
+
+header .container .logo {
+  width: 5rem;
+
+  position: absolute;
+  left: 9.4%;
+  top: 2%;
+}
+
+header .container .start-info {
+  position: absolute;
+  left: 9.6%;
+  top: 9.4%;
+
+  max-width: 28.8%;
+  height: 66%;
+  background-color: var(--white);
+
+  padding: 40px;
+  border-radius: 40px;
+  box-shadow: 0px 20px 50px -15px rgba(29, 117, 101, 0.3);
+}
+
+header .container .start-info h1 {
+  text-transform: uppercase;
+  color: var(--gray1);
+  font-weight: 900;
+  line-height: 63px;
+  font-size: 2.5rem;
+  position: relative;
+  margin-bottom: 8%;
+}
+
+header .container .start-info span {
+  color: var(--lightgreen);
+}
+
+header .container .start-info h1::after {
+  content: "";
+  position: absolute;
+  top: 103%;
+  left: 0;
+  width: 10%;
+  border: 3px solid var(--lightgreen);
+  border-radius: 10px;
+  background-color: var(--lightgreen);
+}
+
+header .container .start-info textarea {
+  width: 100%;
+  height: 50%;
+  font-family: 'Poppins', sans-serif;
+  font-size: .8rem;
+  line-height: 22px;
+  font-weight: 500;
+  padding-right: 17px;
+  color: var(--gray1);
+
+  scrollbar-width: none;
+  overflow: scroll;
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+header .container .start-info textarea::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+header .container .start-info .services-btn {
+  position: absolute;
+  bottom: 8.3%;
+  left: 8%;
+
+  background-color: var(--lightgreen);
+  width: 33%;
+  height: 10%;
+  padding: 1.6rem 2.1rem;
+  border-radius: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white);
+  font-size: 1rem;
+  text-align: center;
+  line-height: 151.5%;
+  font-weight: 900;
+}
+
+header .container .start-info .about {
+  position: absolute;
+  bottom: 11%;
+  left: 47%;
+  font-weight: 600;
+  color: var(--gray4);
+}
+
+header .container .start-info .services-btn::after {
+  content: "\2190";
+
+  position: absolute;
+  right: -120%;
+  transform: scaleX(500%);
+
+  color: var(--lightgreen);
+}
+/* #endregion */
+
+/* ===== SECOND PAGE STYLES ===== */
+/* #region */
+section {
+  position: relative;
+  width: 100%;
+  max-height: calc(1263px + 600vh);
+  background: #FFFFFF;
+  display: grid;
+  grid-template-rows: 813px 450px auto 50vh 70vh;
+}
+
+section .container2 {
+  position: relative;
+  left: 0;
+  box-shadow: 0px 0px 40px -6px rgba(29, 117, 101, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+section .container2 #how-we-w {
+  color: var(--gray1);
+
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 138%;
+  text-transform: uppercase;
+
+  position: relative;
+
+  padding: 2% 0 5% 0;
+}
+
+section .container2 #how-we-w span {
+  color: var(--lightgreen);
+}
+
+section .container2 #how-we-w::after {
+  content: "";
+
+  width: 5%;
+
+  position: absolute;
+  top: 60%;
+  left: 47.5%;
+
+  border: 3px solid var(--lightgreen);
+  border-radius: 10px;
+
+  background-color: var(--lightgreen);
+}
+
+section .container2 .slideshow-container {
+  display: none;
+}
+
+section .container2 .img-container {
+  position: absolute;
+  left: 9.6%;
+  right: 9.6%;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(5%, 24%));
+  grid-gap: 5px;
+}
+
+section .container2 .img-container > img {
+  width: 100%;
+  height: 85%;
+}
+
+section .container2 .img-container>img:nth-child(1n + 1) {
+  margin-top: -10%;
+}
+
+/* ===== Responsive images container ===== */ 
+/* #region */
+.mySlides {
+  display: none;
+  justify-content: center;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slideshow-position {
+  position: absolute;
+  width: 80.8%;
+  left: 9.6%;
+  right: 9.6%;
+}
+
+.prev-slide,
+.next-slide {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: .6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next-slide {
+  right: 0%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev-slide:hover,
+.next-slide:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.dots {
+  position: relative;
+  top: 54.5%;
+  text-align: center;
+  display: none;
+}
+
+.dot {
+  position: relative;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* #endregion */
+/* ===== End of responsive images container ===== */
+
+section .container2 .how-we-work {
+  position: absolute;
+  left: 9.6%;
+  right: 9.6%;
+  bottom: 20%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .container2 .how-we-work h1 {
+  position: absolute;
+  width: 21%;
+  height: 50px;
+  margin: 0;
+
+  font-weight: 900;
+  font-size: 2.2rem;
+  line-height: 100%;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--gray5);
+}
+
+section .container2 .how-we-work h1::after {
+  content: "";
+
+  height: 90%;
+  position: absolute;
+  
+  right: -5%;
+  top: -20%;
+
+  border: 2px solid var(--lightgreen);
+  border-radius: 10px;
+
+  background-color: var(--lightgreen);
+}
+
+section .container2 .how-we-work p {
+  position: absolute;
+  width: 76%;
+  height: 50px;
+  right: 0;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: .8rem;
+  
+  line-height: 138.5%;
+
+  color:var(--gray3);
+}
+
+section .container2 .services {
+  position: absolute;
+  left: 46.5%;
+  top: 85%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--lightgreen);
+  width: 8.5%;
+  height: 6%;
+  padding: 1.6rem 2.1rem;
+  border-radius: 40px;
+
+
+  color: var(--white);
+  font-size: 1rem;
+  text-align: center;
+  line-height: 151.5%;
+  font-weight: 900;
+}
+
+/* #endregion */
+
+/* ===== THIRD PAGE STYLES ===== */
+/* #region */
+section .container3 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  background: url('../Images/Third Page/BGGreen.png') no-repeat 100% 0;
+  background-size: 27% 45%;
+  
+  left: 0;
+}
+
+section .container3 #about-us {
+  position: relative;
+  left: 9.6%;
+  right: 9.6%;
+
+  height: 100%;
+  width: 80.8%;
+}
+
+section .container3 #about-us .about-us {
+  position: relative;
+
+  color: var(--gray1);
+
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 138%;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  margin: 2% 0 3% 0;
+}
+
+section .container3 #about-us .about-us span {
+  color: var(--lightgreen);
+}
+
+section .container3 #about-us .about-us::after {
+  content: "";
+
+  position: absolute;
+  top: 120%;
+  left: 47.5%;
+
+  width: 5%;
+
+  border: 3px solid var(--lightgreen);
+  border-radius: 10px;
+
+  background-color: var(--lightgreen);
+}
+
+section .container3 #about-us textarea {
+  position: absolute;
+  left: 0;
+  top: 30%;
+
+  width: 50%;
+  height: 30%;
+  font-weight: 500;
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: .8rem;
+  line-height: 151.5%;
+  overflow-y: scroll;
+
+  color: var(--gray1);
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+section .container3 #about-us textarea::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+section .container3 #about-us a {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+
+  background-color: var(--lightgreen);
+  width: 10%;
+  height: 10%;
+  padding: 1.6rem 2.1rem;
+  border-radius: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: var(--white);
+  font-size: 1rem;
+  text-align: center;
+  line-height: 151.5%;
+  font-weight: 900;
+}
+
+section .container3 #about-us #about-us-img {
+  position: absolute;
+  bottom: 10%;
+  right: 9.6%;
+
+  width: 30rem;
+}
+
+/* #endregion */
+
+/* ===== FOURTH PAGE STYLES ===== */
+/* #region */
+section .container4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  box-shadow: 0px 0px 40px -6px rgba(29, 117, 101, 0.2);
+}
+
+section .container4 h1 {
+  position: relative;
+
+  color: var(--gray1);
+
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 138%;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  margin: 2% 0 3% 0;
+}
+
+section .container4 h1::after {
+  content: "";
+
+  position: absolute;
+  top: 120%;
+  left: 48%;
+
+  width: 4%;
+
+  border: 3px solid var(--lightgreen);
+  border-radius: 10px;
+
+  background-color: var(--lightgreen);
+}
+
+/* === items container === */
+.responsive-row {
+  display: none;
+}
+
+section .container4 .items-position {
+  position: relative;
+  left: 9.6%;
+  right: 9.6%;
+
+  width: 80.8%;
+}
+
+.row {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.row-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+
+.container4 img {
+  width: 3.5rem;
+  padding-bottom: 10px;
+  user-select: none;
+}
+
+.container4 h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 138%;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--gray1);
+  user-select: none;
+}
+
+.container4 p {
+  font-weight: 500;
+  font-size: .8rem;
+  line-height: 138.5%;
+
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+
+  color: var(--gray3);
+  user-select: none;
+}
+
+/* === end items container */
+
+section .container4 a {
+  position: relative;
+
+  display: block;
+  width: 9%;
+  margin: auto;
+  padding: 15px;
+
+  background: var(--white);
+  border: 2px solid var(--lightgreen);
+  border-radius: 92px;
+
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 151.5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+
+  color: var(--lightgreen);
+  margin-bottom: 3rem;
+}
+
+/* #endregion */
+
+/* ===== FIFTH PAGE STYLES ===== */
+/* #region */
+section .container5 {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section .container5 .bg-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background: url('../Images/Fourth Page/Background.png') no-repeat;
+
+  background-position: 100% 0;
+  background-size: 27% 100%;
+}
+
+section .container5 h1 {
+  position: relative;
+
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 138%;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--gray1);
+  margin: 2% 0 3% 0;
+}
+
+section .container5 h1::after {
+  content: "";
+
+  position: absolute;
+  top: 120%;
+  left: 47.5%;
+
+  width: 5%;
+
+  border: 3px solid var(--lightgreen);
+  border-radius: 10px;
+
+  background-color: var(--lightgreen);
+}
+
+section .container5 .swiper {
+  position: absolute;
+  margin-top: -3%;
+  left: 9.6%;
+  right: 9.6%;
+  width: 80.8%;
+  height: 300px;
+}
+
+section .container5 .swiper .swiper-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+section .container5 .swiper .swiper-slide {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+section .container5 .swiper .flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+section .container5 .swiper .flex > div {
+  height: 150px;
+  overflow-y: scroll;
+  padding: 1.5rem;
+  background: var(--white);
+  box-shadow: 0px 20px 50px -15px rgba(29, 117, 101, 0.2);
+  border-radius: 30px;
+  width: 80%;
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+section .container5 .swiper .flex>div>h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 138%;
+  padding-bottom: .6rem;
+
+  color: var(--gray1);
+}
+
+section .container5 .swiper .flex>div>p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 138.5%;
+
+  color: var(--gray3);
+}
+
+section .container5 .swiper .flex>div::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+section .container5 a {
+  position: relative;
+  top: 60%;  
+
+  display: block;
+  width: 9%;
+  margin: auto;
+  padding: 15px;
+
+  background: var(--white);
+  border: 2px solid var(--lightgreen);
+  border-radius: 92px;
+
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 151.5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+
+  color: var(--lightgreen);
+}
+/* #endregion */
+
+/* ===== SIXTH PAGE STYLES ===== */
+/* #region */ 
+
+section .container6 {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+section .container6 .contact-us {
+  position: absolute;
+  left: 9.6%;
+  right: 9.6%;
+
+  width: 80.8%;
+  height: 80%;
+  align-self: center;
+  padding: 30px 40px 40px 40px;
+
+  background-color: var(--gray6);
+  border-radius: 30px;
+}
+
+section .container6 .contact-us h1 {
+  position: relative;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 138%;
+  text-transform: uppercase;
+  
+  margin: 0 0 3% 0;
+  text-align: center;
+
+  color: var(--gray1);
+}
+
+section .container6 .contact-us h1::after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 47.5%;
+
+  width: 5%;
+
+  border: 3px solid var(--lightgreen);
+  border-radius: 10px;
+
+  background-color: var(--lightgreen);
+}
+
+section .container6 .info {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+section .container6 .info .input-group {
+  position: relative;
+  display: grid;
+  row-gap: 10px;
+  width: 70%;
+}
+
+section .container6 .info .input-group::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+
+  border: 3px solid var(--gray5);
+  border-radius: 10px;
+
+  background-color: var(--gray5);
+}
+
+section .container6 .input-group input,
+section .container6 .input-group textarea {
+  height: 50px;
+  background: var(--white);
+  border-radius: 10px;
+  
+  width: 95%;
+  padding: 1rem;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: .8rem;
+  line-height: 138.5%;
+
+  color: var(--gray3);
+}
+
+section .container6 .input-group textarea {
+  resize: none;
+  overflow-y: scroll;
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+section .container6 .input-group textarea::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+section .container6 .submit-container {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+section .container6 .submit-container button {
+  color: var(--white);
+  background-color: var(--lightgreen);
+  font-weight: 600;
+  font-size: .8rem;
+  line-height: 138.5%;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  width: 15%;
+  padding: 15px;
+  border-radius: 24px;
+}
+
+section .container6 .submit-container p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 138.5%;
+
+  color: var(--darkgreen);
+}
+
+section .container6 .about-us-container {
+  margin-left: 3%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+section .container6 .about-us-container>div {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+section .container6 .about-us-container>div > i {
+  color: var(--lightgreen);
+  font-size: 1.5rem;
+  margin: 0 1.5rem 3rem;
+}
+
+section .container6 .about-us-container > div > a,
+section .container6 .about-us-container>div>p {
+  margin-bottom: 3rem;
+
+  font-family: 'TT Hoves';
+  font-weight: 500;
+  font-size: .9rem;
+  line-height: 17px;
+
+  color: var(--gray2);
+}
+
+footer {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  
+  background: var(--gray2);
+}
+
+/* #endregion */
+
+@media screen and (max-height: 900px) {
+  section {
+    grid-template-rows: 813px 450px auto 70vh 75vh;
+  }
+
+  section .container6 .contact-us {
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  /* ===== FOURTH PAGE STYLES ===== */
+  section .container4 a {
+      width: 11%;
+  }
+
+  /* ===== FIFTH PAGE STYLES ===== */
+  section .container5 a {
+    width: 11%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  /* ===== FIRST PAGE STYLES ===== */
+  /* #region */
+  header .container .start-info {
+    max-width: 35%;
+    height: 65%;
+  }
+  
+  header .container .start-info h1 {
+    font-size: 2rem;
+  }
+
+  header .container .start-info .services::after {
+    transform: scaleX(300%);
+  }
+  
+    /* #endregion */
+  
+  /* ===== SECOND PAGE STYLES ===== */
+  /* #region */
+  section {
+    grid-template-rows: 600px 450px auto 50vh 70vh;
+  }
+
+  section .container2 #how-we-w {
+    font-size: 2rem;
+  }
+
+  section .container2 .how-we-work h1 {
+    font-size: 1.8rem;
+  }
+
+  section .container2 .how-we-work h1::after {
+    top: 10%;
+  }
+
+  section .container2 .services {
+    top: 87%;
+  }
+
+  /* #endregion */
+
+/* ===== THIRD PAGE STYLES ===== */
+/* #region */
+
+section .container3 #about-us .about-us {
+  font-size: 2rem;
+  margin: 2% 0 3% 0;
+}
+
+section .container3 #about-us textarea {
+  top: 25%;
+}
+
+section .container3 #about-us a {
+  height: 50px;
+  width: 11%;
+
+  left: 45.5%;
+  bottom: 14.5%;
+}
+
+section .container3 #about-us #about-us-img {
+  bottom: 34.5%;
+
+  width: 20rem;
+}
+
+/* #endregion */
+
+/* ===== FOURTH PAGE STYLES ===== */
+section .container4 h1 {
+  font-size: 2rem;
+}
+
+section .container4 a {
+  width: 12%;
+}
+
+/* ===== FIFTH PAGE STYLES ===== */
+section .container5 h1 {
+  font-size: 2rem;
+}
+
+section .container5 a {
+  width: 12%;
+}
+
+/* ===== SIXTH PAGE STYLES ===== */
+section .container6 .contact-us h1 {
+  font-size: 2rem;
+}
+
+/* #endregion */
+}
+
+@media screen and (max-width: 1200px) {
+  /* ===== FIRST PAGE STYLES ===== */
+  header .container .start-info {
+    top: 16%;
+  }
+  
+  header .container {
+    background-size: 30% 75%, 50% 105%;
+  }
+
+  /* ===== SECOND PAGE STYLES ===== */
+  section .container2 .how-we-work {
+    bottom: 25%;
+  }
+
+  /* ===== SIXTH PAGE STYLES ===== */
+  section .container6 .submit-container p {
+    font-size: .8rem;
+  }
+
+  section .container6 .contact-us {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  section {
+    grid-template-rows: 1450px 450px auto 50vh 70vh;
+  }
+
+  /* ===== FIRST PAGE STYLES ===== */
+  header .container .start-info {
+    top: 16%;
+    max-width: 40%;
+    height: 60%;
+  }
+
+  /* ===== SECOND PAGE STYLES ===== */
+  /* #region */
+
+  section .container2 #how-we-w {
+    font-size: 2rem;
+    padding: 2% 0 9% 0;
+  }
+
+  section .container2 #how-we-w::after {
+    top: 50%;
+  }
+
+  section .container2 .img-container {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 49%));
+  }
+
+  section .container2 .how-we-work {
+    bottom: 13%;
+  }
+
+  section .container2 .how-we-work h1 {
+    font-size: 2rem;
+  }
+
+  section .container2 .how-we-work h1::after {
+    top: 15%;
+  }
+
+  section .container2 .services {
+    top: 93%;
+    width: 11%;
+    height: 2%;
+  }
+
+  /* #endregion */
+
+  /* ===== FOURTH PAGE STYLES ===== */
+  section .container4 a {
+    width: 15%;
+  }
+
+  .container4 h3 {
+    font-size: 1rem;
+  }
+
+  /* ===== FIFTH PAGE STYLES ===== */
+  section .container5 a {
+    width: 15%;
+  }
+  
+  /* ===== SIXTH PAGE STYLES ===== */
+  section .container6 .contact-us {
+    height: 80%;
+  }
+  
+  section .container6 .submit-container button {
+    width: 23%;
+  }
+
+  section .container6 .submit-container p {
+    font-size: .6rem;
+  }
+
+}
+
+@media screen and (max-width: 1030px) {
+  section {
+    grid-template-rows: 800px 450px auto 50vh 70vh;
+  }
+
+  /* ===== FIRST PAGE STYLES ===== */
+  header .container {
+    background: url('../Images/First Page/Background2.png') no-repeat, url('../Images/First Page/GreenBG.png') no-repeat;
+    background-position: 80% 100%, 113% 0;
+    background-size: 30% 60%, 50% 105%;
+
+    background-color: var(--white);
+  }
+
+  /* ===== SECOND PAGE STYLES ===== */
+  section .container2 #how-we-w {
+    padding: 2% 0 4% 0;
+  }
+
+  section .container2 #how-we-w::after {
+    top: 70%;
+  }
+  
+  section .container2 .how-we-work h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Responsive */
+  section .container2 .slideshow-container {
+    display: block;
+  }
+
+  .dots {
+    display: block;
+  }
+  /* End responsive */
+
+  section .container2 .img-container {
+    display: none;
+  }
+
+  section .container2 .how-we-work {
+    bottom: 23%;
+  }
+
+  section .container2 .services {
+    top: 87%;
+  }
+
+  /* ===== THIRD PAGE STYLES ===== */
+  section .container3 #about-us #about-us-img {
+    right: 0%;
+  }
+
+  /* ===== FOURTH PAGE STYLES ===== */
+  .row {
+    display: none;
+  }
+
+  .responsive-row {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  .row-item {
+    width: 45%;
+  }
+
+  .container4 h3 {
+    font-size: 1.2rem;
+  }
+
+  .show-list {
+    text-align: center;
+    color: var(--lightgreen);
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+  }
+
+  .hide-list {
+    text-align: center;
+    color: var(--lightgreen);
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+  }
+
+  .show-list:hover {
+    transform: scale(1.1);
+  }
+
+  .show-list:active {
+    transform: translateY(10px)
+  }
+
+  .hide-list:hover {
+    transform: scale(1.1);
+  }
+
+  .hide-list:active {
+    transform: translateY(10px)
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* ===== FIRST PAGE STYLES ===== */
+  header .container .start-info h1 {
+    font-size: 1.7rem;
+  }
+  
+  header .container .start-info .services {
+    width: 30%;
+    height: 10%;
+    font-size: .8rem;
+  }
+
+  header .container .start-info .about {
+    bottom: 11.5%;
+    left: 45%;
+    font-size: .8rem;
+  }
+
+  header .container .start-info .services::after {
+    right: -140%;
+  }
+
+  /* ===== THIRD PAGE STYLES ===== */
+  section .container3 #about-us a {
+    width: 14%;
+  }
+
+  /* ===== FOURTH PAGE STYLES ===== */
+  section .container4 a {
+    width: 20%;
+  }
+
+  /* ===== FIFTH PAGE STYLES ===== */
+  section .container5 a {
+    width: 20%;
+  }
+
+  /* ===== SIXTH PAGE STYLES ===== */
+  section .container6 .contact-us h1 {
+    font-size: 2rem;
+    margin: 0 0 6% 0;
+  }
+
+  section .container6 .submit-container button {
+    width: 25%;
+  }
+
+  section .container6 .submit-container p {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    grid-template-rows: 740px 450px auto 50vh 70vh;
+  }
+  
+  /* ===== FIRST PAGE STYLES ===== */
+  header .container .start-info .services-btn::after {
+    transform: scaleX(200%);
+  }
+
+  /* ===== SECOND PAGE STYLES ===== */
+  section .container2 .services {
+    left: 42.5%;
+    top: 88%;
+    width: 15%;
+  }
+
+  section .container2 .how-we-work {
+    bottom: 23%;
+  }
+
+  .slideshow-container .mySlides img {
+    width: 60%;
+  }
+
+  .dots {
+    top: 38.5%;
+  }
+  
+  .dot {
+    margin: 20px 2px 0 2px;
+  }
+
+  section .container2 .how-we-work {
+    bottom: 13%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section .container2 .how-we-work h1 {
+    width: 100%;
+    top: 0%;
+  }
+
+  section .container2 .how-we-work h1::after {
+    height: 0;
+    width: 10%;
+    left: 50%;
+    top: 75%;
+    transform: translateX(-50%);
+    border: 3px solid var(--lightgreen);
+  }
+
+  section .container2 .how-we-work p {
+    bottom: 5%;
+    width: 100%;
+    height: 100px;
+  }
+
+  /* ===== THIRD PAGE STYLES ===== */
+  section .container3 #about-us textarea {
+    top: 20%;
+    width: 70%;
+  }
+
+  section .container3 #about-us #about-us-img {
+    bottom: 10%;
+    left: 0%;
+
+    width: 15rem;
+  }
+
+  section .container3 #about-us a {
+    width: 18.5%;
+    bottom: 10%;
+    left: 70%;
+  }
+
+  /* ===== SIXTH PAGE STYLES ===== */
+  section .container6 .about-us-container>div>i {
+    margin: 0 .5rem 3rem;
+  }
+
+  section .container6 .about-us-container>div>a,
+  section .container6 .about-us-container>div>p {
+    font-size: .8rem;
+    line-height: 1rem;
+  }
+
+  section .container6 .contact-us {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    grid-template-rows: 700px 450px auto 50vh 70vh;
+  }
+  
+  /* ===== FIRST PAGE STYLES ===== */
+  header .container .start-info {
+    padding: 30px;
+    height: 46%;
+
+    top: 25.4%;
+  }
+
+  header .container .start-info h1 {
+    line-height: 33px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  header .container .start-info h1::after {
+    width: 25%;
+  }
+
+  header .container .start-info .services-btn {
+    font-size: .9rem;
+  }
+
+  /* ===== SECOND PAGE STYLES ===== */
+  section .container2 #how-we-w {
+    padding: 2% 0 5% 0;
+  }
+
+  .slideshow-container .mySlides img {
+    width: 300px;
+  }
+
+  .dots {
+    top: 32.5%;
+  }
+
+  section .container2 .how-we-work {
+    bottom: 15%;
+  }
+
+  section .container2 .how-we-work h1::after {
+    top: 100%;
+    border: 3px solid var(--lightgreen);
+  }
+    
+  section .container2 .how-we-work p {
+    bottom: 5%;
+    width: 100%;
+    height: 100px;
+  }
+  
+  section .container2 .services {
+    top: 87%;
+  }
+
+  /* ===== FOURTH PAGE STYLES ===== */
+  section .container4 h1 {
+    margin: 2% 0 7% 0;
+  }
+  
+  section .container4 a {
+    width: 25%;
+  }
+
+  /* ===== FIFTH PAGE STYLES ===== */
+  section .container5 a {
+    width: 25%
+  }
+
+  /* ===== SIXTH PAGE STYLES ===== */
+  section .container6 .contact-us {
+    height: 75%;
+  }
+  
+  section .container6 .submit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-top: 1.5rem;
+  }
+
+  section .container6 .submit-container button {
+    width: 75%;
+    padding: 15px;
+    border-radius: 24px;
+    margin-bottom: 1.5rem;
+  }
+
+  section .container6 .submit-container p {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* ===== FIRST PAGE STYLES ===== */
+  /* #region */
+  header .container {
+    background: url('../Images/First Page/GreenBG.png') no-repeat;
+  
+    background-position: 113% 0;
+    background-size: 50% 105%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .container .start-info {
+    min-width: 75%;
+    padding: 40px;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  header .container .start-info h1 {
+    padding-bottom: 5%;
+    margin-bottom: 10%;
+  }
+
+  header .container .start-info textarea {
+    height: 55%;
+  }
+  
+  header .container .start-info .services-btn {
+    bottom: 16%;
+    left: 10%;
+    width: 80%;
+  }
+
+  header .container .start-info .about {
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .container .start-info .services-btn::after {
+    content: "";
+    right: 0%;
+    transform: scaleX(0%);
+  }
+
+  /* #endregion */
+
+  /* ===== SECOND PAGE STYLES ===== */
+  /* #region */
+
+  section .container2 #how-we-w {
+    padding: 2% 0 10% 0;
+  }
+
+  section .container2 #how-we-w::after {
+    margin-top: 8px;
+    width: 13%;
+    left: 43.5%;
+    top: 55%;
+  }
+
+  section .container2 .how-we-work {
+    bottom: 15%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section .container2 .how-we-work h1 {
+    width: 100%;
+    top: 10%;
+  }
+
+  section .container2 .how-we-work h1::after {
+    height: 0;
+    width: 10%;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 3px solid var(--lightgreen);
+  }
+
+  section .container2 .how-we-work p {
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+  }
+
+
+  section .container2 .services {
+    left: 35%;
+
+    width: 30%;
+    height: 5%;
+  }
+  /* #endregion */
+
+  /* ===== THIRD PAGE STYLES ===== */
+  section .container3 #about-us .about-us::after {
+    width: 15.5%;
+    left: 42.25%;
+  }
+
+  section .container3 #about-us a {
+    width: 30%;
+  }
+  
+  /* ===== FOURTH PAGE STYLES ===== */
+  section .container4 a {
+    width: 35%;
+  }
+
+  section .container4 h1::after {
+    width: 13%;
+    left: 43.5%;
+  }
+
+  /* ===== FIFTH PAGE STYLES ===== */
+  section .container5 h1::after {
+    width: 13%;
+    left: 43.5%;
+  }
+
+  section .container5 a {
+    width: 35%
+  }
+
+  /* ===== SIXTH PAGE STYLES ===== */
+  section .container6 .contact-us {
+    height: 80%;
+  }
+  
+  section .container6 .contact-us h1 {
+    margin: 0 0 10% 0;
+  }
+
+  section .container6 .contact-us h1::after {
+    left: 40%;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* ===== FIRST PAGE STYLES ===== */
+  /* #region */
+  header .container .start-info h1 {
+    font-size: 1.2rem;
+  }
+
+  header .container .start-info .services-btn {
+    height: 20px;
+    width: 75%;
+    padding: 1.5rem 2.1rem;
+
+    font-size: .9rem;
+    font-weight: 900;
+  }
+
+  header .container .start-info .about {
+    text-align: center;
+    width: 75%;
+    left: 10%;
+    font-weight: 600;
+    color: var(--gray4);
+  }
+  /* #endregion */
+
+  /* ===== SECOND PAGE STYLES ===== */
+  /* #region */
+  section {
+    grid-template-rows: 750px 450px auto 50vh 70vh;
+  }
+
+  .slideshow-container .mySlides img {
+    width: 270px;
+  }
+
+  .dots {
+    top: 27.5%;
+  }
+
+  section .container2 .how-we-work {
+    bottom: 25%;
+  }
+    
+  section .container2 .services {
+    top: 85%;
+  }
+    
+
+  /* #endregion */
+
+  /* ===== THIRD PAGE STYLES ===== */
+  section .container3 #about-us #about-us-img {
+    position: absolute;
+    bottom: 25%;
+    left: 30%;
+    transform: translate(-50%);
+
+    width: 10rem; 
+  }
+
+  section .container3 #about-us a {
+    left: 31.5%;
+    width: 37%;
+  }
+
+  /* ===== SIXTH PAGE STYLES ===== */
+  section .container6 .contact-us {
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 80%;
+    padding: 30px 20px 20px 20px;
+  }
+
+  section .container6 .about-us-container>div {
+    display: block;
+    text-align: center;
+  }
+
+  section .container6 .about-us-container>div>i {
+    margin: .5rem 0;
+  }
+
+  section .container6 .about-us-container>div>a,
+  section .container6 .about-us-container>div>p {
+    margin-bottom: 1.5rem;
+    font-size: .7rem;
+    line-height: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  /* ===== FOURTH PAGE STYLES ===== */
+  section .container4 a {
+    width: 50%;
+  }
+
+  /* ===== FIFTH PAGE STYLES ===== */
+  section .container5 .swiper {
+    width: 90%;
+    left: 0%;
+    right: 5%;
+    margin: 0;
+  }
+
+  section .container5 .swiper .swiper-slide {
+    width: 100%;
+  }
+
+  section .container5 a {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1100px) and (max-height: 650px) {
+  section {
+    grid-template-rows: 813px 450px auto 75vh 80vh;
+  }
+
+  header .container .start-info {
+    max-width: 50%;
+    height: 70%;
+    padding: 25px;
+  }
+
+  section .container6 .contact-us {
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) and (max-height: 950px) {
+  section {
+    grid-template-rows: 730px 450px auto 50vh 70vh;
+  }
+
+  .dots {
+    top: 26.5%;
+  }
+
+  section .container2 .how-we-work {
+    bottom: 26%;
+  }
+
+  section .container2 .services {
+    top: 85%;
+  }
+
+  section .container6 .contact-us {
+    height: 85%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ===== FIRST PAGE STYLES ===== */
+  /* #region */
+  header .container .start-info {
+    left: 5%;
+    right: 5%;
+    transform: translate(0%, -50%);
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  /* #endregion */
+
+  /* ===== SECOND PAGE STYLES ===== */
+  .prev-slide,
+  .next-slide {
+    border-radius: 3px 3px 3px 3px;
+  }
+
+  .prev-slide:hover,
+  .next-slide:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  section .container2 .services {
+    top: 87%;
+  }
+
+  /* ===== THIRD PAGE STYLES ===== */
+  /* #region */
+  section .container3 #about-us textarea {
+    left: 5%;
+    top: 20%;
+
+    width: 70%;
+    height: 50%;
+  }
+
+  section .container3 #about-us #about-us-img {
+    display: none;
+  }
+
+  section .container3 #about-us a {
+    width: 40%;
+  }
+
+  /* ===== FOURTH PAGE STYLES ===== */
+  /* #endregion */
+
+  /* ===== FOURTH PAGE STYLES ===== */
+  section .container4 a {
+    width: 40%;
+  }
+
+  /* ===== FIFTH PAGE STYLES ===== */
+  section .container5 .swiper {
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 300px;
+  }
+
+  section .container5 .swiper .swiper-slide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  section .container5 a {
+    width: 40%;
+  }
+
+  /* ===== SIXTH PAGE STYLES ===== */
+  section .container6 .contact-us h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  header .container .start-info {
+    height: 80%;
+  }
+
+  section {
+    grid-template-rows: 813px 450px auto 70vh 80vh;
+  }
+
+  section .container6 .contact-us {
+    height: 85%;
+  }
+
+  section .container6 .submit-container p {
+    font-size: .7rem;
+  }
+
+  section .container6 .info .input-group::after {
+    right: -3%;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  header .container .start-info {
+    height: 80%;
+  }
+
+  section {
+    grid-template-rows: 813px 450px auto 70vh 85vh;
+  }
+
+  section .container6 .contact-us {
+    height: 90%;
+  }
+
+  section .container6 .submit-container p {
+    font-size: .7rem;
+  }
+
+  section .container6 .info .input-group::after {
+    right: -3%;
+  }
+
+}
+
+@media screen and (max-width: 300px) {
+  /* ===== FOURTH PAGE STYLES ===== */
+  section .container4 .items-position {
+    left: 5%;
+    right: 5%;
+
+    width: 90%;
+  }
+
+  .container4 img {
+    width: 1.5rem;
+  }
+
+  .container4 h3 {
+    font-weight: 600;
+    font-size: .8rem;
+    line-height: 138%;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--gray1);
+    user-select: none;
+  }
+
+  .container4 p {
+    font-weight: 500;
+    font-size: .7rem;
+    line-height: 138.5%;
+
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    color: var(--gray3);
+    user-select: none;
+  }
+
+
+  section .container4 a {
+    width: 65%;
+    font-size: .8rem;
+  }
+
+  /* ===== FOURTH PAGE STYLES ===== */
+  .show-list {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+
+  .hide-list {
+    text-align: center;
+    color: var(--lightgreen);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+
+  /* ===== FIFTH PAGE STYLES ===== */
+  section .container5 a {
+    width: 65%;
+    font-size: .8rem;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  section {
+    grid-template-rows: 813px 450px auto 50vh 65vh;
+  }
+
+  section .container3 #about-us a {
+    width: 20%;
+  }
+}
+
+@media screen and (min-height: 1150px) {
+  section {
+    grid-template-rows: 813px 450px auto 40vh 50vh;
+  }
+
+  section .container6 .contact-us {
+    height: 80%;
+  }
+}
+
+@media screen and (min-height: 1350px) {
+  section {
+    grid-template-rows: 813px 450px auto 40vh 45vh;
+  }
+
+  header .container .start-info .services-btn::after {
+    transform: scaleX(300%);
+  }
+
+  section .container3 #about-us a {
+    width: 13%;
+  }
+
+  section .container6 .contact-us h1 {
+    margin: 0 0 7% 0;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  section {
+    grid-template-rows: 813px 450px auto 120vh 130vh;
+  }
+
+  /* ===== FIRST PAGE STYLES ===== */
+
+  header .container .start-info {
+    width: 45%;
+    padding: 25px;
+  }
+
+  header .container .start-info h1 {
+    font-size: 1.5rem;
+  }
+
+  header .container .start-info h1::after {
+    width: 15%;
+  }
+
+  header .container .start-info textarea {
+    height: 30%;
+  }
+
+  header .container .start-info .services-btn {
+    padding: 1.4rem 2.1rem;
+    font-size: .9rem;
+  }
+
+  header .container .start-info .about {
+    bottom: 12.5%;
+  }
+
+}
+
+@media screen and (max-height: 400px) {
+  header .container .start-info {
+    top: 15%;
+  }
+
+  section {
+    grid-template-rows: 813px 450px auto 120vh 145vh;
+  }
+}
+
+@media screen and (max-height: 370px) {
+  header .container .start-info h1 {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
